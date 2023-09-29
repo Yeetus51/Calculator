@@ -3,3 +3,124 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#title{
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#calculator-window{
+    margin-top: 100px;
+    height: 600px;
+    width: 500px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: solid 2px rgb(150, 150, 150);
+}
+
+
+
+
+#calculator-display{
+    width: 90%;
+    height: 20%;
+    background-color: rgb(2, 20, 3);
+    border-radius: 25px;
+    margin: 5% 0 0 0 ;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 30px;
+    border: solid 5px rgb(150, 150, 150);
+}
+#calculator-display>h1{
+    color: white;
+}
+
+
+#numbers-window{
+    width: 55%;
+    height: 60%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 25px;
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border: solid 5px rgb(200, 200, 200);
+}
+
+#number-window-container{
+    display: grid;
+    grid-template-columns: 83px 83px 83px;
+    grid-template-rows: 83px 83px 83px 83px;
+}
+#number-window-container>div:last-of-type{
+    grid-area: 4/2;
+}
+#number-window-container>div{
+    background-color: rgb(100, 100, 100);
+    margin: 5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+#number-window-container>div:hover{
+    background-color: rgb(70,70,70);
+}
+
+#oporators-window{
+    width: 30%;
+    height: 60%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1.5%;
+    border: solid 5px rgb(200, 200, 200);
+}
+
+#oporators-window-container{
+    display: grid;
+    grid-template-columns: 60px  60px;
+    grid-template-rows: 60px 60px 60px 60px;
+    grid-gap: 30px 8px;
+}
+
+#oporators-window-container>div{
+    background-color: rgb(220,140,0);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+#oporators-window-container>div:hover{
+    background-color: rgb(190,110,0);
+}
